@@ -1,3 +1,3 @@
 First note!
 
-Another note!
+Another note

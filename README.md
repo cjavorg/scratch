@@ -1,3 +1,1 @@
-First note!
-
-Another note
+This is a demo repo for experimenting with AI Reviewers

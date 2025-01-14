@@ -56,6 +56,23 @@ class WordleApp < Sinatra::Base
     }
   end
 
+  get '/leaderboard' do
+    # Get top 10 players by number of wins
+    top_players = Game.select('COUNT(*) as wins')
+      .where("guesses @> '[{\"result\":[\"correct\",\"correct\",\"correct\",\"correct\",\"correct\"]}]'")
+      .group('user_id')
+      .order('wins DESC')
+      .limit(10)
+      .map do |result|
+        {
+          user: User.find(result.user_id),
+          wins: result.wins
+        }
+      end
+
+    erb :leaderboard, locals: { players: top_players }
+  end
+
   # Start the application if ruby file executed directly
   run! if app_file == $0
 end

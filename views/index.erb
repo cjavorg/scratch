@@ -1,0 +1,17 @@
+<div class="game-container">
+  <h1>Sinatra Wordle</h1>
+  <div class="game-board">
+    <% 6.times do |row| %>
+      <div class="word-row">
+        <% 5.times do |col| %>
+          <div class="letter-box"></div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+
+  <form action="/guess" method="post">
+    <input type="text" name="guess" maxlength="5" pattern="[A-Za-z]{5}" required>
+    <input type="submit" value="Guess">
+  </form>
+</div>

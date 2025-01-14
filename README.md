@@ -1,1 +1,1 @@
-This is a demo repo for experimenting with AI Reviewers
+This is a demo app

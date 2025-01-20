@@ -8,8 +8,8 @@ class WordleApp < Sinatra::Base
 
   configure do
     set :database_file, 'config/database.yml'
-    set :views, './views'  # Explicitly set views directory
-    set :public_folder, './public'  # Explicitly set public folder
+    set :views, './views'
+    set :public_folder, './public'
   end
 
   get '/' do

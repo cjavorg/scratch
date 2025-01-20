@@ -1,1 +1,1 @@
-This is a demo app showing how to use Graphite.
+This is a demo app. It's used for showing a quick demo.

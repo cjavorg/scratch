@@ -8,6 +8,7 @@ gem 'sinatra-activerecord'
 gem 'rake'
 
 group :test do
+  gem 'byebug'
   gem 'rspec'
   gem 'rack-test'
   gem 'database_cleaner-active_record'

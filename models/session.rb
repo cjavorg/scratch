@@ -1,3 +1,3 @@
 class Session
-  def id = "123"
+  def id = SecureRandom.uuid
 end

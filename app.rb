@@ -37,7 +37,7 @@ class WordleApp < Sinatra::Base
 
     # Add guess and check result
     result = game.check_guess(guess)
-    game.guesses = (game.guesses || []) << {text: guess, result: result}
+    game.guesses = (game.guesses || []) << { text: guess, result: result }
     game.save
 
     # Check if game is won or lost

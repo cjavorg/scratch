@@ -24,3 +24,7 @@ log/*
 
 # Temp files
 tmp/*
+
+.byebug_history
+
+db/*.sqlite*

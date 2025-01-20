@@ -13,11 +13,27 @@
 ActiveRecord::Schema[8.0].define(version: 2024_03_21_000000) do
   create_table "games", force: :cascade do |t|
     t.integer "word_id", null: false
+    t.integer "player_id", null: false
     t.text "guesses"
     t.boolean "completed", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["player_id"], name: "index_games_on_player_id"
     t.index ["word_id"], name: "index_games_on_word_id"
+  end
+
+  create_table "players", force: :cascade do |t|
+    t.string "name", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["name"], name: "index_players_on_name", unique: true
+  end
+
+  create_table "sessions", force: :cascade do |t|
+    t.integer "player_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["player_id"], name: "index_sessions_on_player_id"
   end
 
   create_table "words", force: :cascade do |t|
@@ -27,5 +43,6 @@ ActiveRecord::Schema[8.0].define(version: 2024_03_21_000000) do
     t.index ["text"], name: "index_words_on_text", unique: true
   end
 
+  add_foreign_key "games", "players"
   add_foreign_key "games", "words"
 end

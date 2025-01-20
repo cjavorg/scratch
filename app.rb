@@ -5,7 +5,7 @@ require_relative 'models/game'
 require_relative 'models/word'
 require_relative 'models/player'
 require_relative 'models/session'
-
+require 'byebug'
 class WordleApp < Sinatra::Base
   enable :sessions
 
@@ -15,30 +15,23 @@ class WordleApp < Sinatra::Base
     set :public_folder, './public'
   end
 
-  before do
-    if session[:session_id].nil?
+  get '/' do
+    if session[:player_id].nil?
       # Create a new player with random internet name
       player = Player.create!(
         name: Faker::Internet.unique.username(specifier: 3..20)
       )
-
-      # Create a new session for the player
-      db_session = Session.create!(player: player)
-      session[:session_id] = db_session.id
+      session[:player_id] = player.id
     end
 
-    @current_player = Session.find(session[:session_id]).player
-  rescue ActiveRecord::RecordNotFound
-    # If session is invalid, clear it and redirect to home
-    session.clear
-    redirect '/'
-  end
+    @current_player = Player.find(session[:player_id])
 
-  get '/' do
     erb :index
   end
 
   post '/guess' do
+    @current_player = Player.find(session[:player_id])
+
     guess = params[:guess].downcase
 
     # Validate guess length

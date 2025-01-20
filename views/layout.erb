@@ -2,7 +2,51 @@
 <html>
 <head>
   <title>Sinatra Wordle</title>
+  <!-- Add Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
+  <style>
+    body {
+      font-family: 'Press Start 2P', 'VT323', 'Courier New', monospace;
+      line-height: 1.6;
+      background-color: #121213;
+      color: #ffffff;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 32px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .letter-box {
+      font-family: 'Press Start 2P', 'VT323', 'Courier New', monospace;
+      font-size: 20px;  /* Slightly smaller for better fit */
+    }
+
+    input[type="text"],
+    input[type="submit"] {
+      font-family: 'Press Start 2P', 'VT323', 'Courier New', monospace;
+      font-size: 16px;  /* Adjusted for readability */
+    }
+
+    .message,
+    .error {
+      font-family: 'VT323', 'Press Start 2P', 'Courier New', monospace;
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+
+    .new-game {
+      font-family: 'Press Start 2P', 'VT323', 'Courier New', monospace;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  </style>
 </head>
 <body>
   <%= yield %>

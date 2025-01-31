@@ -18,12 +18,12 @@ config:
   # Explicitly set the number of columns
   # or use `auto` to take the current
   # number of columns of your shell
-  cols: 80
+  cols: 74
   
   # Explicitly set the number of rows
   # or use `auto` to take the current
   # number of rows of your shell
-  rows: 24
+  rows: 18
   
   # Amount of times to repeat GIF
   # If value is -1, play once
@@ -52,9 +52,10 @@ config:
     type: floating
     title: Graphite
     style:
-      border: 2px solid #d9d9e0
-      boxShadow: 0px 0px 0px 20px #000000
-      margin: 10px
+      # border: "2px solid #e2e8f0"
+      # boxShadow: "inset 0 0 2px 2px #65818026, inset 0 0 4px 4px #202f2e26"
+      border: "2px solid #202f2e"
+      margin: 40px
       backgroundColor: "#1e1e20"
   
   # Add a watermark image to the rendered gif
@@ -113,63 +114,151 @@ config:
   
 # Records, feel free to edit them
 records:
-  - delay: 612
-    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                               \r \r\e]2;cjav_dev@CJs-MacBook-Pro:~/repos/scratch\a\e]1;~/repos/scratch\a\e]7;file://CJs-MacBook-Pro.local/Users/cjav_dev/repos/scratch\e\\\r\e[0m\e[27m\e[24m\e[J> \e[K\e[?1h\e=\e[?2004h"
-  - delay: 1005
+  - delay: 371
+    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                         \r \r\e]2;cjav_dev@CJs-MacBook-Pro:~/repos/scratch\a\e]1;~/repos/scratch\a\e]7;file://CJs-MacBook-Pro.local/Users/cjav_dev/repos/scratch\e\\\r\e[0m\e[27m\e[24m\e[J> \e[K\e[?1h\e=\e[?2004h"
+  - delay: 2351
     content: g
-  - delay: 69
-    content: "\bgi"
-  - delay: 112
-    content: t
-  - delay: 65
-    content: ' '
-  - delay: 184
-    content: c
-  - delay: 123
-    content: h
-  - delay: 109
-    content: e
-  - delay: 143
-    content: c
-  - delay: 73
-    content: k
-  - delay: 152
-    content: o
-  - delay: 64
-    content: u
-  - delay: 88
-    content: 't '
-  - delay: 183
-    content: m
-  - delay: 104
-    content: a
-  - delay: 41
-    content: i
-  - delay: 72
-    content: 'n'
-  - delay: 223
-    content: "\e[?1l\e>\e[?2004l\r\r\n\e]2;git checkout main\a\e]1;git\a"
-  - delay: 21
-    content: "Switched to branch 'main'\r\nYour branch is up to date with 'origin/main'.\r\n\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                               \r \r\e]2;cjav_dev@CJs-MacBook-Pro:~/repos/scratch\a\e]1;~/repos/scratch\a\e]7;file://CJs-MacBook-Pro.local/Users/cjav_dev/repos/scratch\e\\\r\e[0m\e[27m\e[24m\e[J> \e[K\e[?1h\e=\e[?2004h"
-  - delay: 4790
-    content: g
-  - delay: 200
+  - delay: 193
     content: "\bgt"
-  - delay: 113
+  - delay: 137
     content: ' '
-  - delay: 927
+  - delay: 545
     content: c
-  - delay: 729
-    content: "\b \b"
-  - delay: 4337
-    content: "\b\b\b  \b\b"
-  - delay: 551
-    content: l
+  - delay: 280
+    content: r
+  - delay: 54
+    content: e
+  - delay: 73
+    content: a
+  - delay: 72
+    content: t
+  - delay: 57
+    content: e
   - delay: 64
-    content: "\bls"
-  - delay: 143
-    content: "\e[?1l\e>\e[?2004l\r\r\n\e]2;ls -G\a\e]1;ls\a"
-  - delay: 9
-    content: "Gemfile      README.md    app.rb       config.ru    \e[1m\e[36mmodels\e[39;49m\e[0m       \e[1m\e[36mspec\e[39;49m\e[0m\r\nGemfile.lock Rakefile     \e[1m\e[36mconfig\e[39;49m\e[0m       \e[1m\e[36mdb\e[39;49m\e[0m           \e[1m\e[36mnode_modules\e[39;49m\e[0m \e[1m\e[36mviews\e[39;49m\e[0m\r\n\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                               \r \r\e]2;cjav_dev@CJs-MacBook-Pro:~/repos/scratch\a\e]1;~/repos/scratch\a\e]7;file://CJs-MacBook-Pro.local/Users/cjav_dev/repos/scratch\e\\\r\e[0m\e[27m\e[24m\e[J> \e[K\e[?1h\e=\e[?2004h"
-  - delay: 9325
+    content: ' '
+  - delay: 264
+    content: '-'
+  - delay: 242
+    content: a
+  - delay: 547
+    content: m
+  - delay: 407
+    content: ' '
+  - delay: 391
+    content: '"'
+  - delay: 200
+    content: T
+  - delay: 238
+    content: e
+  - delay: 177
+    content: s
+  - delay: 46
+    content: t
+  - delay: 75
+    content: ' '
+  - delay: 209
+    content: g
+  - delay: 72
+    content: a
+  - delay: 144
+    content: m
+  - delay: 56
+    content: e
+  - delay: 112
+    content: ' '
+  - delay: 160
+    content: c
+  - delay: 93
+    content: l
+  - delay: 70
+    content: a
+  - delay: 152
+    content: s
+  - delay: 144
+    content: s
+  - delay: 153
+    content: '"'
+  - delay: 578
+    content: "\e[?1l\e>\e[?2004l\r\r\n\e]2;gt create -am \"Test game class\"\a\e]1;gt\a"
+  - delay: 248
+    content: "2 files changed, 50 insertions(+), 175 deletions(-)\r\n delete mode 100644 demo.yml\r\n create mode 100644 spec/game_spec.rb\r\n"
+  - delay: 13
+    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                         \r \r\e]2;cjav_dev@CJs-MacBook-Pro:~/repos/scratch\a\e]1;~/repos/scratch\a\e]7;file://CJs-MacBook-Pro.local/Users/cjav_dev/repos/scratch\e\\\r\e[0m\e[27m\e[24m\e[J> \e[K\e[?1h\e=\e[?2004h"
+  - delay: 1085
+    content: g
+  - delay: 199
+    content: "\bgt"
+  - delay: 257
+    content: ' '
+  - delay: 1250
+    content: l
+  - delay: 187
+    content: o
+  - delay: 65
+    content: g
+  - delay: 91
+    content: ' '
+  - delay: 167
+    content: s
+  - delay: 88
+    content: h
+  - delay: 54
+    content: o
+  - delay: 67
+    content: r
+  - delay: 160
+    content: t
+  - delay: 101
+    content: "\e[?1l\e>\e[?2004l\r\r\n\e]2;gt log short\a\e]1;gt\a"
+  - delay: 159
+    content: "\e[?1049h\e[?1h\e=\r\e[38;2;76;203;241m◯\e[39m      \e[38;2;76;203;241m01-20-make_guest_player_sessions_work\e[39m\e[m\r\n\e[38;2;76;203;241m◯\e[39m      \e[38;2;76;203;241m01-20-add_add_guest_players\e[39m\e[m\r\n\e[38;2;76;203;241m│\e[39m\e[38;2;76;203;241m \e[39m\e[38;2;77;202;125m◉\e[39m    \e[38;2;77;202;125m01-31-test_game_class\e[39m\e[m\r\n\e[38;2;76;203;241m│\e[39m\e[38;2;76;203;241m \e[39m\e[38;2;77;202;125m◯\e[39m    \e[38;2;77;202;125m01-20-add_tests_for_word_class\e[39m\e[m\r\n\e[38;2;76;203;241m│\e[39m\e[38;2;76;203;241m \e[39m\e[38;2;77;202;125m│\e[39m\e[38;2;77;202;125m \e[39m\e[38;2;110;173;38m◯\e[39m  \e[38;2;110;173;38m01-29-add_player_sessions\e[39m\e[m\r\n\e[38;2;76;203;241m◯\e[39m\e[38;2;76;203;241m─\e[39m\e[38;2;77;202;125m┴\e[39m\e[38;2;77;202;125m─\e[39m\e[38;2;110;173;38m┘\e[39m  \e[38;2;76;203;241mmain\e[39m\e[m\r\n\e[7m(END)\e[27m\e[K"
+  - delay: 2977
+    content: "\r\e[K\e[?1l\e>\e[?1049l"
+  - delay: 15
+    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                         \r \r\e]2;cjav_dev@CJs-MacBook-Pro:~/repos/scratch\a\e]1;~/repos/scratch\a\e]7;file://CJs-MacBook-Pro.local/Users/cjav_dev/repos/scratch\e\\\r\e[0m\e[27m\e[24m\e[J> \e[K\e[?1h\e=\e[?2004h"
+  - delay: 1565
+    content: g
+  - delay: 183
+    content: "\bgt"
+  - delay: 88
+    content: ' '
+  - delay: 233
+    content: s
+  - delay: 177
+    content: t
+  - delay: 70
+    content: a
+  - delay: 201
+    content: c
+  - delay: 102
+    content: k
+  - delay: 98
+    content: ' '
+  - delay: 232
+    content: '-'
+  - delay: 149
+    content: '-'
+  - delay: 225
+    content: s
+  - delay: 89
+    content: u
+  - delay: 207
+    content: b
+  - delay: 249
+    content: m
+  - delay: 47
+    content: i
+  - delay: 81
+    content: t
+  - delay: 735
+    content: "\e[?1l\e>\e[?2004l\r\r\n\e]2;gt stack --submit\a\e]1;gt\a"
+  - delay: 93
+    content: "gt stack <command>\r\n\r\nCommands:\r\n  gt stack restack  Ensure each branch in the current stack is based on\r\n                    its parent, rebasing if necessary.\r\n                                                    [aliases: r, fix, f]\r\n  gt stack submit   Idempotently force push all branches in the current\r\n                    stack to GitHub, creating or updating distinct pull\r\n                    requests for each.                      [aliases: s]\r\n\r\nGlobal options:\r\n      --cwd          Working directory in which to perform operations.\r\n                                                                [string]\r\n      --debug        Write debug output to the terminal.\r\n                                              [boolean] [default: false]\r\n      --interactive  Enable interactive features like prompts, pagers,\r\n                     and editors. Enabled by default. Disable with\r\n                     `--no-interactive`.       [boolean] [default: true]\r\n      --verify       Enable git hooks. Enabled by default. Disable with\r\n                     `--no-verify`.            [boolean] [default: true]\r\n  -q, --quiet        Minimize output to the terminal. Implies\r\n                     `--no-interactive`.      [boolean] [default: false]\r\n\r\nOptions:\r\n      --help  Show help for a command.        [boolean] [default: false]\r\n\r\nNot enough non-option arguments: got 0, need at least 1\r\n"
+  - delay: 5
+    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                         \r \r\e]2;cjav_dev@CJs-MacBook-Pro:~/repos/scratch\a\e]1;~/repos/scratch\a\e]7;file://CJs-MacBook-Pro.local/Users/cjav_dev/repos/scratch\e\\\r\e[0m\e[27m\e[24m\e[J> \e[K\e[?1h\e=\e[?2004h"
+  - delay: 5336
+    content: q
+  - delay: 1031
+    content: "\b \b"
+  - delay: 579
     content: "\e[?2004l\r\r\n"

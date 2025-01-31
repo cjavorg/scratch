@@ -18,12 +18,12 @@ config:
   # Explicitly set the number of columns
   # or use `auto` to take the current
   # number of columns of your shell
-  cols: 80
+  cols: 74
   
   # Explicitly set the number of rows
   # or use `auto` to take the current
   # number of rows of your shell
-  rows: 24
+  rows: 18
   
   # Amount of times to repeat GIF
   # If value is -1, play once
@@ -52,9 +52,10 @@ config:
     type: floating
     title: Graphite
     style:
-      border: 2px solid #d9d9e0
-      boxShadow: 0px 0px 0px 20px #000000
-      margin: 10px
+      # border: "2px solid #e2e8f0"
+      # boxShadow: "inset 0 0 2px 2px #65818026, inset 0 0 4px 4px #202f2e26"
+      border: "2px solid #202f2e"
+      margin: 40px
       backgroundColor: "#1e1e20"
   
   # Add a watermark image to the rendered gif
@@ -113,63 +114,67 @@ config:
   
 # Records, feel free to edit them
 records:
-  - delay: 612
-    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                               \r \r\e]2;cjav_dev@CJs-MacBook-Pro:~/repos/scratch\a\e]1;~/repos/scratch\a\e]7;file://CJs-MacBook-Pro.local/Users/cjav_dev/repos/scratch\e\\\r\e[0m\e[27m\e[24m\e[J> \e[K\e[?1h\e=\e[?2004h"
-  - delay: 1005
+  - delay: 317
+    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                         \r \r\e]2;cjav_dev@CJs-MacBook-Pro:~/repos/scratch\a\e]1;~/repos/scratch\a\e]7;file://CJs-MacBook-Pro.local/Users/cjav_dev/repos/scratch\e\\\r\e[0m\e[27m\e[24m\e[J> \e[K\e[?1h\e=\e[?2004h"
+  - delay: 2020
     content: g
-  - delay: 69
-    content: "\bgi"
-  - delay: 112
-    content: t
-  - delay: 65
-    content: ' '
-  - delay: 184
-    content: c
-  - delay: 123
-    content: h
-  - delay: 109
-    content: e
-  - delay: 143
-    content: c
-  - delay: 73
-    content: k
-  - delay: 152
-    content: o
-  - delay: 64
-    content: u
-  - delay: 88
-    content: 't '
-  - delay: 183
-    content: m
-  - delay: 104
-    content: a
-  - delay: 41
-    content: i
-  - delay: 72
-    content: 'n'
-  - delay: 223
-    content: "\e[?1l\e>\e[?2004l\r\r\n\e]2;git checkout main\a\e]1;git\a"
-  - delay: 21
-    content: "Switched to branch 'main'\r\nYour branch is up to date with 'origin/main'.\r\n\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                               \r \r\e]2;cjav_dev@CJs-MacBook-Pro:~/repos/scratch\a\e]1;~/repos/scratch\a\e]7;file://CJs-MacBook-Pro.local/Users/cjav_dev/repos/scratch\e\\\r\e[0m\e[27m\e[24m\e[J> \e[K\e[?1h\e=\e[?2004h"
-  - delay: 4790
-    content: g
-  - delay: 200
+  - delay: 201
     content: "\bgt"
-  - delay: 113
+  - delay: 126
     content: ' '
-  - delay: 927
+  - delay: 314
     content: c
-  - delay: 729
-    content: "\b \b"
-  - delay: 4337
-    content: "\b\b\b  \b\b"
-  - delay: 551
-    content: l
-  - delay: 64
-    content: "\bls"
-  - delay: 143
-    content: "\e[?1l\e>\e[?2004l\r\r\n\e]2;ls -G\a\e]1;ls\a"
-  - delay: 9
-    content: "Gemfile      README.md    app.rb       config.ru    \e[1m\e[36mmodels\e[39;49m\e[0m       \e[1m\e[36mspec\e[39;49m\e[0m\r\nGemfile.lock Rakefile     \e[1m\e[36mconfig\e[39;49m\e[0m       \e[1m\e[36mdb\e[39;49m\e[0m           \e[1m\e[36mnode_modules\e[39;49m\e[0m \e[1m\e[36mviews\e[39;49m\e[0m\r\n\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                               \r \r\e]2;cjav_dev@CJs-MacBook-Pro:~/repos/scratch\a\e]1;~/repos/scratch\a\e]7;file://CJs-MacBook-Pro.local/Users/cjav_dev/repos/scratch\e\\\r\e[0m\e[27m\e[24m\e[J> \e[K\e[?1h\e=\e[?2004h"
-  - delay: 9325
+  - delay: 207
+    content: r
+  - delay: 79
+    content: e
+  - delay: 39
+    content: a
+  - delay: 100
+    content: t
+  - delay: 38
+    content: e
+  - delay: 66
+    content: ' '
+  - delay: 188
+    content: '-'
+  - delay: 147
+    content: a
+  - delay: 208
+    content: m
+  - delay: 152
+    content: ' '
+  - delay: 224
+    content: '"'
+  - delay: 269
+    content: A
+  - delay: 369
+    content: d
+  - delay: 136
+    content: d
+  - delay: 80
+    content: ' '
+  - delay: 492
+    content: "\b"
+  - delay: 127
+    content: s
+  - delay: 100
+    content: ' '
+  - delay: 142
+    content: t
+  - delay: 57
+    content: e
+  - delay: 206
+    content: s
+  - delay: 47
+    content: t
+  - delay: 147
+    content: s
+  - delay: 33
+    content: t
+  - delay: 886
+    content: "\b\b\b\b\b\b      \b\b\b\b\b\b"
+  - delay: 348
+    content: "\e[20D                   \e[19D"
+  - delay: 369
     content: "\e[?2004l\r\r\n"

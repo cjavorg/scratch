@@ -18,12 +18,12 @@ config:
   # Explicitly set the number of columns
   # or use `auto` to take the current
   # number of columns of your shell
-  cols: 80
+  cols: 74
   
   # Explicitly set the number of rows
   # or use `auto` to take the current
   # number of rows of your shell
-  rows: 24
+  rows: 18
   
   # Amount of times to repeat GIF
   # If value is -1, play once
@@ -52,9 +52,10 @@ config:
     type: floating
     title: Graphite
     style:
-      border: 2px solid #d9d9e0
-      boxShadow: 0px 0px 0px 20px #000000
-      margin: 10px
+      # border: "2px solid #e2e8f0"
+      # boxShadow: "inset 0 0 2px 2px #65818026, inset 0 0 4px 4px #202f2e26"
+      border: "2px solid #202f2e"
+      margin: 40px
       backgroundColor: "#1e1e20"
   
   # Add a watermark image to the rendered gif
@@ -113,63 +114,165 @@ config:
   
 # Records, feel free to edit them
 records:
-  - delay: 612
-    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                               \r \r\e]2;cjav_dev@CJs-MacBook-Pro:~/repos/scratch\a\e]1;~/repos/scratch\a\e]7;file://CJs-MacBook-Pro.local/Users/cjav_dev/repos/scratch\e\\\r\e[0m\e[27m\e[24m\e[J> \e[K\e[?1h\e=\e[?2004h"
-  - delay: 1005
+  - delay: 236
+    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                         \r \r\e]2;cjav_dev@CJs-MacBook-Pro:~/repos/scratch\a\e]1;~/repos/scratch\a\e]7;file://CJs-MacBook-Pro.local/Users/cjav_dev/repos/scratch\e\\\r\e[0m\e[27m\e[24m\e[J> \e[K\e[?1h\e=\e[?2004h"
+  - delay: 1046
     content: g
-  - delay: 69
-    content: "\bgi"
-  - delay: 112
-    content: t
-  - delay: 65
-    content: ' '
-  - delay: 184
-    content: c
-  - delay: 123
-    content: h
-  - delay: 109
-    content: e
-  - delay: 143
-    content: c
-  - delay: 73
-    content: k
-  - delay: 152
-    content: o
-  - delay: 64
-    content: u
-  - delay: 88
-    content: 't '
-  - delay: 183
-    content: m
-  - delay: 104
-    content: a
-  - delay: 41
-    content: i
-  - delay: 72
-    content: 'n'
-  - delay: 223
-    content: "\e[?1l\e>\e[?2004l\r\r\n\e]2;git checkout main\a\e]1;git\a"
-  - delay: 21
-    content: "Switched to branch 'main'\r\nYour branch is up to date with 'origin/main'.\r\n\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                               \r \r\e]2;cjav_dev@CJs-MacBook-Pro:~/repos/scratch\a\e]1;~/repos/scratch\a\e]7;file://CJs-MacBook-Pro.local/Users/cjav_dev/repos/scratch\e\\\r\e[0m\e[27m\e[24m\e[J> \e[K\e[?1h\e=\e[?2004h"
-  - delay: 4790
-    content: g
-  - delay: 200
+  - delay: 202
     content: "\bgt"
-  - delay: 113
+  - delay: 119
     content: ' '
-  - delay: 927
+  - delay: 201
     content: c
-  - delay: 729
-    content: "\b \b"
-  - delay: 4337
-    content: "\b\b\b  \b\b"
-  - delay: 551
+  - delay: 258
+    content: r
+  - delay: 69
+    content: e
+  - delay: 23
+    content: a
+  - delay: 115
+    content: t
+  - delay: 46
+    content: e
+  - delay: 88
+    content: ' '
+  - delay: 200
+    content: '-'
+  - delay: 153
+    content: a
+  - delay: 242
+    content: m
+  - delay: 68
+    content: ' '
+  - delay: 278
+    content: '"'
+  - delay: 102
+    content: A
+  - delay: 302
+    content: d
+  - delay: 150
+    content: d
+  - delay: 153
+    content: s
+  - delay: 184
+    content: ' '
+  - delay: 232
+    content: t
+  - delay: 56
+    content: e
+  - delay: 192
+    content: s
+  - delay: 50
+    content: t
+  - delay: 130
+    content: s
+  - delay: 119
+    content: ' '
+  - delay: 134
+    content: f
+  - delay: 67
+    content: o
+  - delay: 100
+    content: r
+  - delay: 89
+    content: ' '
+  - delay: 128
+    content: g
+  - delay: 87
+    content: a
+  - delay: 109
+    content: m
+  - delay: 117
+    content: e
+  - delay: 250
+    content: '"'
+  - delay: 820
+    content: "\e[?1l\e>\e[?2004l\r\r\n\e]2;gt create -am \"Adds tests for game\"\a\e]1;gt\a"
+  - delay: 273
+    content: "2 files changed, 113 insertions(+), 58 deletions(-)\r\n create mode 100644 spec/game_spec.rb\r\n"
+  - delay: 13
+    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                         \r \r\e]2;cjav_dev@CJs-MacBook-Pro:~/repos/scratch\a\e]1;~/repos/scratch\a\e]7;file://CJs-MacBook-Pro.local/Users/cjav_dev/repos/scratch\e\\\r\e[0m\e[27m\e[24m\e[J> \e[K\e[?1h\e=\e[?2004h"
+  - delay: 1984
+    content: g
+  - delay: 171
+    content: "\bgt"
+  - delay: 98
+    content: ' '
+  - delay: 102
     content: l
-  - delay: 64
-    content: "\bls"
-  - delay: 143
-    content: "\e[?1l\e>\e[?2004l\r\r\n\e]2;ls -G\a\e]1;ls\a"
-  - delay: 9
-    content: "Gemfile      README.md    app.rb       config.ru    \e[1m\e[36mmodels\e[39;49m\e[0m       \e[1m\e[36mspec\e[39;49m\e[0m\r\nGemfile.lock Rakefile     \e[1m\e[36mconfig\e[39;49m\e[0m       \e[1m\e[36mdb\e[39;49m\e[0m           \e[1m\e[36mnode_modules\e[39;49m\e[0m \e[1m\e[36mviews\e[39;49m\e[0m\r\n\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                               \r \r\e]2;cjav_dev@CJs-MacBook-Pro:~/repos/scratch\a\e]1;~/repos/scratch\a\e]7;file://CJs-MacBook-Pro.local/Users/cjav_dev/repos/scratch\e\\\r\e[0m\e[27m\e[24m\e[J> \e[K\e[?1h\e=\e[?2004h"
-  - delay: 9325
+  - delay: 187
+    content: o
+  - delay: 68
+    content: g
+  - delay: 110
+    content: ' '
+  - delay: 172
+    content: s
+  - delay: 50
+    content: h
+  - delay: 45
+    content: o
+  - delay: 63
+    content: r
+  - delay: 172
+    content: t
+  - delay: 319
+    content: "\e[?1l\e>\e[?2004l\r\r\n\e]2;gt log short\a\e]1;gt\a"
+  - delay: 162
+    content: "\e[?1049h\e[?1h\e=\r\e[38;2;76;203;241m◯\e[39m      \e[38;2;76;203;241m01-20-make_guest_player_sessions_work\e[39m\e[m\r\n\e[38;2;76;203;241m◯\e[39m      \e[38;2;76;203;241m01-20-add_add_guest_players\e[39m\e[m\r\n\e[38;2;76;203;241m│\e[39m\e[38;2;76;203;241m \e[39m\e[38;2;77;202;125m◉\e[39m    \e[38;2;77;202;125m01-31-adds_tests_for_game\e[39m\e[m\r\n\e[38;2;76;203;241m│\e[39m\e[38;2;76;203;241m \e[39m\e[38;2;77;202;125m◯\e[39m    \e[38;2;77;202;125m01-20-add_tests_for_word_class\e[39m\e[m\r\n\e[38;2;76;203;241m│\e[39m\e[38;2;76;203;241m \e[39m\e[38;2;77;202;125m│\e[39m\e[38;2;77;202;125m \e[39m\e[38;2;110;173;38m◯\e[39m  \e[38;2;110;173;38m01-29-add_player_sessions\e[39m\e[m\r\n\e[38;2;76;203;241m◯\e[39m\e[38;2;76;203;241m─\e[39m\e[38;2;77;202;125m┴\e[39m\e[38;2;77;202;125m─\e[39m\e[38;2;110;173;38m┘\e[39m  \e[38;2;76;203;241mmain\e[39m\e[m\r\n\e[7m(END)\e[27m\e[K"
+  - delay: 3638
+    content: "\r\e[K\e[?1l\e>\e[?1049l"
+  - delay: 11
+    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                         \r \r\e]2;cjav_dev@CJs-MacBook-Pro:~/repos/scratch\a\e]1;~/repos/scratch\a\e]7;file://CJs-MacBook-Pro.local/Users/cjav_dev/repos/scratch\e\\\r\e[0m\e[27m\e[24m\e[J> \e[K\e[?1h\e=\e[?2004h"
+  - delay: 624
+    content: g
+  - delay: 178
+    content: "\bgt"
+  - delay: 97
+    content: ' '
+  - delay: 216
+    content: s
+  - delay: 119
+    content: u
+  - delay: 201
+    content: b
+  - delay: 269
+    content: m
+  - delay: 56
+    content: i
+  - delay: 109
+    content: t
+  - delay: 66
+    content: ' '
+  - delay: 153
+    content: '-'
+  - delay: 164
+    content: '-'
+  - delay: 199
+    content: s
+  - delay: 501
+    content: t
+  - delay: 88
+    content: a
+  - delay: 232
+    content: c
+  - delay: 76
+    content: k
+  - delay: 245
+    content: "\e[?1l\e>\e[?2004l\r\r\n\e]2;gt submit --stack\a\e]1;gt\a"
+  - delay: 476
+    content: "\e[94m\U0001F95E Validating that this Graphite stack is ready to submit...\e[39m\r\n"
+  - delay: 2410
+    content: "\r\n\e[94m✏️ Preparing to submit PRs for the following branches...\e[39m\r\n"
+  - delay: 7
+    content: "▸ \e[90m01-20-add_tests_for_word_class\e[39m (No-op)\r\n▸ \e[36m01-31-adds_tests_for_game\e[39m (Create)\r\n"
+  - delay: 30
+    content: "\r\n\e[94m\U0001F4E8 Pushing to remote and creating/updating PRs...\e[39m\r\n"
+  - delay: 2683
+    content: "\e[32m01-31-adds_tests_for_game\e[39m: \e[32mcreated\e[39m\r\n"
+  - delay: 26
+    content: "https://app.graphite.dev/submit/cjavorg/scratch/38\r\n"
+  - delay: 161
+    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                         \r \r\e]2;cjav_dev@CJs-MacBook-Pro:~/repos/scratch\a\e]1;~/repos/scratch\a\e]7;file://CJs-MacBook-Pro.local/Users/cjav_dev/repos/scratch\e\\\r\e[0m\e[27m\e[24m\e[J> \e[K\e[?1h\e=\e[?2004h"
+  - delay: 4994
     content: "\e[?2004l\r\r\n"

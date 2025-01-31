@@ -6,8 +6,8 @@ A Ruby implementation of the popular word-guessing game Wordle, built with Sinat
 
 - Guess the 5-letter word in 6 attempts or fewer
 - After each guess, you'll get color-coded feedback:
-  - 🟩 Green: Letter is correct and in the right position
-  - 🟨 Yellow: Letter is in the word but in the wrong position
+  - 🟩 Green: Letters are correct and in the right position
+  - 🟨 Yellow: Letters are in the word but in the wrong position
   - ⬜ Gray: Letter is not in the word
 
 ## 🚀 Features

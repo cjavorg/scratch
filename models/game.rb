@@ -1,6 +1,6 @@
 class Game < ActiveRecord::Base
   belongs_to :word
-  serialize :guesses, Array
+  serialize :guesses
 
   validates :word, presence: true
 

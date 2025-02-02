@@ -15,3 +15,6 @@ group :test do
   gem 'rspec'
   gem 'rubocop'
 end
+
+gem "rackup", "~> 2.2"
+gem "puma", "~> 6.5"

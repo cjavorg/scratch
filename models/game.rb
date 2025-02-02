@@ -3,7 +3,6 @@ class Game < ActiveRecord::Base
   validates :word, presence: true
   belongs_to :player
 
-
   def check_guess(guess)
     raise ArgumentError, "Guess cannot be nil" if guess.nil?
     raise ArgumentError, "Guess must be 5 letters" unless guess.length == 5

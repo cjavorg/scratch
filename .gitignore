@@ -24,3 +24,5 @@ log/*
 
 # Temp files
 tmp/*
+
+node_modules/*

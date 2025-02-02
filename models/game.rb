@@ -1,9 +1,8 @@
 class Game < ActiveRecord::Base
-  belongs_to :word
-  serialize :guesses, Array
-
-  belongs_to :player
   serialize :guesses
+  validates :word, presence: true
+  belongs_to :player
+
 
   def check_guess(guess)
     raise ArgumentError, "Guess cannot be nil" if guess.nil?

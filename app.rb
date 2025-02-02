@@ -52,7 +52,7 @@ class WordleApp < Sinatra::Base
     if game_id
       game = Game.find(game_id)
     else
-      word = Word.where("word ~ '#{params[:word]}'").order('RANDOM()').first
+      word = Word.where("word ~ ?", params[:word]).order('RANDOM()').first
       game = Game.create(
         word: word,
         guesses: [],

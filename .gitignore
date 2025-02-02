@@ -25,4 +25,6 @@ log/*
 # Temp files
 tmp/*
 
-node_modules/*
+# Node dependencies
+node_modules
+node_modules/
